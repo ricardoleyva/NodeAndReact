@@ -45,7 +45,7 @@ app.get("/fetchMonth/:num", (req, res) => {
   ];
   const num = req.params.num;
   if (num > 0 && num <= 12) {
-    res.send("Month with number " + num + " is " + months[num-1]);
+    res.send("Month with number " + num + " is " + months[num - 1]);
   } else {
     res.send(
       "Please request a number between 1 and 12. Your request was: " + num
